@@ -1,0 +1,17 @@
+"Failed Transactions
+
+ Internalid : 24121
+type : transactionautoccfailed
+Transactionid: 6609644
+
+ Internalid : 24121
+type : transactionautoccfailed
+Transactionid: 6609646
+
+ Internalid : 24121
+type : transactionautoccfailed
+Transactionid: 6609645
+
+ Internalid : 24121
+type : transactionautoccfailed
+Transactionid: 6609643"

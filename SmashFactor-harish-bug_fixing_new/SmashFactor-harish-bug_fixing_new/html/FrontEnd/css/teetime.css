@@ -1,0 +1,768 @@
+:root {
+    --accent: #046a38;
+    --border-width: 1px;
+    --border-radius: 55px;
+    --font-size: 17px;
+}
+
+.modal-dialog {
+    max-width: 1082px;
+}
+
+@media screen and (max-width:1199px) {
+    .modal-dialog {
+        max-width: 950px;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .modal-dialog {
+        max-width: 700px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .modal-dialog {
+        max-width: unset;
+        margin: var(--bs-modal-margin);
+    }
+}
+
+.close {
+    margin-top: -41px !important;
+}
+
+.btn-block {
+    background-color: #046A38;
+    color: #fff;
+    font-weight: 600;
+}
+
+.btn-block:hover {
+    background-color: #fff;
+    color: #046A38;
+    border: 1px solid #046A38;
+    transition: all 0.5s;
+}
+
+.modal-img {
+    height: 100%;
+}
+
+.btn-block a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/* .btn-block:hover{
+    background-color:#2eb976;
+} */
+
+.btn-edit {
+    background-color: #046A38;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+/*  booking checkout modal css*****/
+
+.container-modal {
+    position: relative;
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    /* width: 995px; */
+    min-height: 500px;
+    background: #fff;
+    /* margin: 20px; */
+    /* align-items: center; */
+}
+
+.container-modal .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    /* height: 100%; */
+    background: #212121;
+    transition: .3s linear;
+    overflow: hidden;
+}
+
+.container-modal .imgBx:before {
+    content: attr(data-before);
+    position: absolute;
+    top: 0px;
+    /* left: 24px; */
+    color: #9da6a1;
+    opacity: 0.4;
+    font-size: 2.8em;
+    font-weight: 800;
+}
+
+.container-modal .imgBx img {
+    position: relative;
+    width: 362px;
+    transform: rotate(-12deg);
+    left: -17px;
+    top: 12%;
+    transition: .9s linear;
+}
+
+.container-modal .imgBx img:hover {
+    transform: scale(1.1);
+}
+
+.container-modal .details {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+}
+
+.container-modal .details h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 45px;
+    line-height: 1em;
+    color: #444;
+}
+
+.container-modal .details h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.container-modal .details p {
+    max-width: 85%;
+    /* margin-left: 15%; */
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 0px;
+    /* margin-top: 20px; */
+}
+
+.container-modal .details h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5em;
+    color: #7c7a7a;
+    float: left;
+    /* padding-bottom: 25%; */
+}
+
+#BookModalCategoryLabel {
+    padding-bottom: 2%;
+    width: -webkit-fill-available;
+    width: 100%;
+}
+
+.container-modal .details #btnCheckout {
+    background: #046A38;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    transition: 0.5s ease-in;
+}
+
+.container-modal .details #btnCheckout:hover {
+    background-color: #d45756;
+}
+
+.tourCreditDiv span {
+    text-align: center;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    top: 7px;
+    margin-right: 12px;
+    left: 10px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.masterCreditDiv span,
+.SRFdivs span {
+    text-align: center;
+    color: #fff;
+    width: 26px;
+    height: 26px;
+    top: 7px;
+    margin-right: 12px;
+    left: 10px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.black-couch {
+    background: #DFF2E5 !important;
+}
+
+.red {
+    background: #D5212E;
+}
+
+.greyOut {
+    background: #717171;
+}
+
+.orange {
+    background: #F18557;
+}
+
+.product-colors .active:after {
+    content: "";
+    width: 36px;
+    height: 36px;
+    border: 2px solid #000;
+    position: absolute;
+    border-radius: 50%;
+    box-sizing: border-box;
+    left: -5px;
+    top: -5px;
+}
+
+#removeCredit {
+    display: flex;
+    align-items: center;
+    margin-left: 0px;
+}
+
+.creditTag {
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+
+
+/* .footer-content{
+    display: flex;
+} */
+
+.rate-div {
+    display: flex;
+    flex-direction: column;
+    /* width: 100%; */
+}
+
+.dis-btn {
+    float: right;
+}
+
+
+/* responsive */
+
+@media (max-width: 991px) {
+    .container-modal {
+        height: auto;
+        flex-wrap: wrap;
+        /* margin: 0; */
+        margin-top: 40px;
+        max-height: unset;
+    }
+    .container-modal .imgBx {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+    .container-modal .imgBx img {
+        left: initial;
+        max-width: 100%;
+        transform: rotate(0deg);
+    }
+    .container-modal .details {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    .container-modal .details p {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 560px) {
+    .container-modal .imgBx:before {
+        font-size: 1.5em;
+    }
+    .container-modal {
+        /* height: auto; */
+        margin: 0;
+        margin-top: 40px;
+    }
+    .dis-btn {
+        float: unset;
+    }
+}
+
+
+/* toggle section */
+
+.conatinertoggle {
+    width: fit-content;
+}
+
+.wrapper {
+    display: inline-flex;
+    background: #fff;
+    height: 46px;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    padding: 5px 1px;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.wrapper .option {
+    background: #fff;
+    height: 100%;
+    width: 142px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 1px solid #93B79F;
+    transition: all 0.3s ease;
+}
+
+.wrapper .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wrapper .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background: #046a38;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2,
+#option-3:checked:checked~.option-3,
+#option-4:checked:checked~.option-4 {
+    border-color: #046a38;
+    background: #046a38;
+}
+
+#option-1:checked:checked~.option-1 .dot,
+#option-3:checked:checked~.option-3 .dot,
+#option-2:checked:checked~.option-2 .dot,
+#option-4:checked:checked~.option-4 .dot  {
+    background: #fff;
+}
+
+#option-1:checked:checked~.option-1 .dot::before,
+#option-2:checked:checked~.option-2 .dot::before,
+#option-3:checked:checked~.option-3 .dot::before,
+#option-4:checked:checked~.option-4 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrapper .option span {
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+    font-family: 'Inter';
+}
+
+#option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span,
+#option-3:checked:checked~.option-3 span {
+    color: #fff;
+}
+
+.bg-yellow {
+    background: linear-gradient(135deg, #b8ffb7, #0f0f0e) !important;
+}
+
+.bg-not_applicable {
+    background: linear-gradient(135deg, #658964, #a4c19c) !important;
+}
+
+.coupon-card {
+    /* height:920PX; */
+    background: linear-gradient(135deg, #00B74F, #00B74F);
+    /*linear-gradient(135deg, #7158fe, #9d4de6);*/
+    color: #fff;
+    text-align: center;
+    padding: 5px 5px;
+    border-radius: 15px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.15);
+    position: relative;
+    margin: 0px 10px;
+}
+
+.gray-background {
+    background: linear-gradient(135deg, #d2d2d2, #646a67) !important;
+}
+
+.ribbon {
+    background-color: grey;
+    /* Change to your desired background color */
+    transform: skew(-10deg);
+    /* Skew the card by -10 degrees */
+}
+
+.logo {
+    width: 80px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.coupon-card h3 {
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 40px;
+}
+
+.coupon-card p {
+    font-size: 15px;
+}
+
+.coupon-row {
+    display: flex;
+    align-items: center;
+    margin: 25px auto;
+    width: fit-content;
+}
+
+#cpnCode {
+    border: 1px dashed #fff;
+    padding: 10px 20px;
+    border-right: 0;
+}
+
+#cpnBtn {
+    border: 1px solid #fff;
+    background: #fff;
+    padding: 10px 20px;
+    color: #7158fe;
+    cursor: pointer;
+}
+
+#cpnBtnDisable {
+    border: 1px solid #cac9c9;
+    background: #cac9c9;
+    padding: 10px 20px;
+    color: #7158fe;
+    pointer-events: none;
+}
+
+.circle1,
+.circle2 {
+    background: #f0fff3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.circle1 {
+    left: -25px;
+}
+
+.circle2 {
+    right: -25px;
+}
+
+._slider {
+    position: relative;
+    overflow: hidden;
+    /* margin-left: 15px; */
+}
+
+._slider:hover ._slider_next,
+._slider:hover ._slider_prev {
+    display: block;
+}
+
+._slider_next,
+._slider_prev {
+    position: absolute;
+    top: 35%;
+    z-index: 999;
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 2% 4%;
+    background: #000;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 2em;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+._slider_next:hover,
+._slider_prev:hover {
+    opacity: 1;
+    -webkit-transition: all 0.2s ease;
+}
+
+._slider_next {
+    right: 0;
+}
+
+._slider ul {
+    /* position: relative; */
+    margin: 0 auto;
+    overflow: hidden;
+    /* padding: 0; */
+    height: 285px;
+    list-style: none;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    gap: 20px;
+}
+
+._slider ul li {
+    /* float: left; */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    display: block;
+    width: 400px;
+    /* line-height: 200px; */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:575px) {
+    ._slider ul {
+        height: 310px;
+    }
+    .logo {
+        margin-bottom: 0;
+    }
+    ._slider ul li {
+        width: 350px;
+        margin-bottom: 50px;
+    }
+}
+
+
+/* ******************************************* * END Slider * */
+
+
+/* New Changes */
+
+.select_date_section {
+    display: flex;
+    justify-content: center;
+    padding-left: 57px;
+    gap: 30px;
+    padding-right: 57px;
+}
+
+.select_date_section>div {
+    flex: 1;
+}
+
+.conatinertoggle {
+    margin-top: 45px;
+    width: unset;
+}
+
+@media screen and (max-width:991px) {
+    .booking_category_buttons {
+        justify-content: space-around;
+        /* column-gap:5px; */
+        column-gap: unset;
+    }
+    .select_date_section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .conatinertoggle {
+        margin-top: 0px;
+        width: unset;
+    }
+    .select_date_heading {
+        text-align: center;
+    }
+    .booking_category_buttons button {
+        width: 215px;
+    }
+    .golfers_selection_div {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .booking_category_buttons button {
+        font-size: 15px;
+        width: 165px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .booking_category_buttons button {
+        /* padding: 10px 10px;
+        font-size: 15px; */
+        padding: 10px 5px;
+        font-size: 14px;
+        border-radius: 20px;
+        width: unset;
+        height: unset;
+    }
+    .booking_section_content {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    #BookModalTimeLabel {
+        font-size: 2.2em;
+    }
+    #BookModalDateLabel {
+        font-size: 1.5rem !important;
+    }
+    #BookModalCutomerNameLabel {
+        font-size: 1.5rem !important;
+    }
+    #BookModalCategoryLabel {
+        padding-bottom: 5%;
+        font-size: 1rem !important;
+    }
+    .custom-margin-small {
+        margin-top: 10px !important;
+        /* Adjust the margin value as needed */
+    }
+    .booking_category_buttons {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .wrapper {
+        width: 270px;
+    }
+    .wrapper .option {
+        margin: 0px 3px;
+        padding: 0px 5px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .booking_category_buttons button {
+        padding: 10px 5px;
+        font-size: 10px;
+        border-radius: 20px;
+        width: unset;
+        height: unset;
+    }
+}
+
+.ribbon-wrapper {
+    height: 70px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    top: -5px;
+    width: 70px;
+    z-index: 10;
+}
+
+.ribbon-wrapper.ribbon-lg {
+    height: 135px;
+    width: 130px;
+}
+
+.ribbon-wrapper.ribbon-lg .ribbon {
+    right: 170px;
+    top: 39px;
+    width: 519px;
+}
+
+.ribbon-wrapper .ribbon {
+    box-shadow: 0 0 3px rgba(0, 0, 0, .3);
+    font-size: 1rem;
+    font-weight: 900;
+    line-height: 100%;
+    padding: .375rem 0;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .4);
+    text-transform: uppercase;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+@media screen and (max-width:479px) {
+    .ribbon-wrapper.ribbon-lg .ribbon {
+        right: 167px;
+        top: 32px;
+        width: 519px;
+    }
+    .wrapper {
+        width: 310px;
+    }
+    .wrapper .option span {
+        font-size: 10px;
+        color: black;
+        font-weight: 600;
+        font-family: 'Inter';
+    }
+}
+
+
+/* .gray-background, .non-vaible{
+    pointer-events: none;
+} */

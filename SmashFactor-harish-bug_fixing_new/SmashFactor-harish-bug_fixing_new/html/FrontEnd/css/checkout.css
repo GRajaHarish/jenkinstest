@@ -1,0 +1,379 @@
+:root {
+    --black: rgb(0 0 0);
+    --dark-navy: rgb(26 28 60);
+    --navy: rgb(45 54 77);
+    --navy-bg: rgb(86 94 115);
+    --gray: rgb(167 167 167);
+    --white: rgb(255 255 255);
+    --yellow: #00B74F;
+    --light-yellow: #00B74F;
+}
+
+#bookNowArticle {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    gap: 1rem;
+}
+
+#bookNowArticle>#BookInAfterhrs {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 6px 8px;
+    border: none;
+    border-radius: 5px;
+    background-color: #046A38;
+}
+
+#bookNowArticle>#BookInAfterhrs:hover {
+    background-color: #00b74fb5;
+}
+
+
+
+.Mcard-checkout {
+    position: relative;
+    background: #002330;
+    /*#16181a;*/
+    border-radius: 14px;
+    width: 447px;
+    display: block;
+    margin: auto;
+    padding: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 2px 10px 40px black;
+    z-index: 99;
+    height: 350px;
+}
+
+.logo-card {
+    /* margin-bottom: 15px; */
+    /* margin-top: -19px; */
+    /* margin-left: 5%; */
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.label {
+    display: flex;
+    font-size: 10px;
+    color: white;
+    opacity: .4;
+}
+
+.input {
+    font-family: 'Work Sans', sans-serif;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #dbdce0;
+    transition: border-bottom .4s;
+}
+
+.input:focus {
+    border-bottom: 1px solid #1abc9c;
+    outline: none;
+}
+
+.cardnumber {
+    display: block;
+    font-size: 20px;
+}
+
+.name {
+    display: block;
+    font-size: 15px;
+    max-width: 200px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.toleft {
+    color: gray;
+}
+
+.ccv {
+    width: 50px;
+    margin-top: -5px;
+    font-size: 15px;
+}
+.chekout{
+    background-color: #dbdce0;
+}
+  .cost{color:#d53a3a;}
+  .seller{color: #199a2e;}
+  /* .description{font-size: 13px;} */
+  .price{font-size:12px;line-height: 20px;}
+  .comprobe{text-align:center;}
+  .proceed{ 
+    position: relative;
+    width:50px; height:50px; border-radius:50%; background:#1abc9c; border:none;color:white; transition: box-shadow .2s, transform .4s; cursor:pointer;}
+  .proceed:active{outline:none; }
+  .proceed:focus{outline:none;box-shadow: inset 0px 0px 5px white;}
+  .sendicon{filter:invert(100%); padding-top:2px;}
+  .proceed-btn-div{
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    padding: 20px 0;
+  }
+.receipt {
+    /* background: #dbdce0; */
+    border-radius: 4px;
+    padding: 5% 5% 2% 5%;
+    /* padding-top: 225px; */
+    /* width: 600px; */
+    display: block;
+    margin: auto;
+    /* margin-top: -180px; */
+    /* z-index: -999;
+    position: relative; */
+}
+.detail-txt{
+    display: none;
+    margin: 16px auto;
+}
+
+.coll {
+    width: 50%;
+    float: left;
+}
+
+.bought-item {
+    background: #f5f5f5;
+    padding: 2px;
+}
+
+
+/* .bought-items{margin-top:-3px;} */
+
+.cost {
+    color: #d53a3a;
+}
+
+.seller {
+    color: #199a2e;
+}
+
+
+/* .description{font-size: 13px;} */
+
+.price {
+    font-size: 12px;
+}
+
+.comprobe {
+    text-align: center;
+}
+
+.proceed {
+    width: fit-content !important;
+    border-radius: 10px !important;
+    background: #046A38;
+    border: none;
+    color: white;
+    transition: 0.2s ease;
+    cursor: pointer;
+    padding: 8px 16px !important;
+}
+.proceed:hover{
+    transition: 0.2s ease;
+    background-color: #057b41cf;
+}
+
+.proceed:active {
+    outline: none;
+}
+
+.proceed:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 5px white;
+}
+
+.sendicon {
+    filter: invert(100%);
+    padding-top: 2px;
+
+}
+
+.no-active {
+    cursor: not-allowed;
+}
+
+  .bought-items.description{
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .want-to-changecheck{
+    border-radius: 10px;
+    padding: 8px 16px !important;
+}
+
+.want-to-changeFreeslot {
+    /* position: absolute;
+    transform: translate(430px, 175px); */
+}
+
+.proceed::before {
+    display: none;
+    content: "PAY NOW";
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+    color: #606161;
+    width: 85px;
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px;
+    position: absolute;
+    left: 50%;
+    bottom: -40px;
+    z-index: 1;
+    transform: translateX(-50%);
+    background-color: white;
+    visibility: hidden;
+}
+
+.proceed:hover::before {
+    visibility: visible;
+}
+
+.proceed::after {
+    display: none;
+    content: "";
+    position: absolute;
+    border-bottom: 10px solid white;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: -1px;
+    visibility: hidden;
+}
+
+.proceed:hover::after {
+    visibility: visible;
+}
+
+.proceed1 {
+    transform: translate(400px, 25px);
+}
+
+.paynow {
+    display: none;
+}
+
+
+.bought-items.customerName{
+    white-space: nowrap; overflow: hidden;  text-overflow: ellipsis; width: 250px;
+}
+
+#cardNumber::placeholder, #cardholderName::placeholder, #csv::placeholder, #expiryDateMM::placeholder, #expiryDateYY::placeholder{
+    opacity: 0.5;
+}
+
+@media screen and (max-width:767px) {
+    .receipt {
+        width: 560px;
+    }
+    .want-to-changeFreeslot {
+        position: absolute;
+        transform: translate(385px, 170px);
+    }
+}
+
+@media (max-width: 575px) {
+    /* .proceed {
+        transform: translate(325px, 25px);
+    } */
+    .col {
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    .card-checkout, .Mcard-checkout {
+        width: 375px;
+        
+    }
+    .receipt {
+        width: 460px;
+    }
+    .bought-items.customerName{
+        width: 200px;
+    }
+    .want-to-changeFreeslot {
+        position: absolute;
+        transform: translate(300px, 170px);
+    }
+    /* .proceed1 {
+        transform: translate(325px, 25px);
+    } */
+    .receipt p {
+        font-size: 14px;
+    }
+    .receipt .price{font-size:12px;line-height: 20px;}
+
+    .receipt .bought-items.description{
+        font-size: 14px;
+        line-height: 20px;
+      }
+}
+
+@media (max-width:480px) {
+    /* .logo-card {
+    width: 50px;
+    height: 30px;
+  } */
+    .proceed {
+        display: none;
+        /* transform: translate(190px, 60px); */
+        width: 40px;
+        height: 40px;
+    }
+    .card-checkout, .Mcard-checkout {
+        width: 290px;
+        height: 400px;
+    }
+    .receipt {
+        width: 335px;
+        padding-top: 240px;
+    }
+    .bought-items.customerName{
+        width: 150px;
+    }
+    .want-to-changeFreeslot {
+        position: absolute;
+        transform: translate(165px, 155px);
+    }
+    #bookNowArticle>#BookInAfterhrs {
+        width: 280px;
+    }
+    .proceed1 {
+        transform: translate(190px, 60px);
+    }
+    .cardnumber {
+        font-size: 16px;
+    }
+    .toleft {
+        font-size: 14px;
+    }
+    #cardholderName {
+        font-size: 16px;
+    }
+    #cvn {
+        font-size: 16px;
+    }
+    .paynow {
+        display: flex;
+    }
+    .price{
+        max-width: 135px;
+    }
+}
